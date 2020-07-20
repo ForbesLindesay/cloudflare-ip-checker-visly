@@ -30,7 +30,7 @@ const styles = [
     layers: {
       CL61ZqDsmp: {
         none: {
-          text: "Cloudflare IP Addres Checker",
+          text: "Cloudflare IP Address Checker",
         },
       },
       BXyZQ1o9NC: {
