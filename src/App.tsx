@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import isCloudflare from '@authentication/cloudflare-ip';
+import {MainPage, Input, ValidationResultIcon} from './visly';
 
+function getStatus(value: string) {
+  try {
+    return isCloudflare(value) ? 'valid' : 'invalid';
+  } catch (ex) {
+    return 'unknown';
+  }
+}
 function App() {
+  const [value, setValue] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainPage
+      style={{minHeight: '100vh', width: '100%'}}
+      Input={<Input value={value} onChange={setValue} />}
+      ValidationResultIcon={<ValidationResultIcon status={getStatus(value)} />}
+    />
   );
 }
 
