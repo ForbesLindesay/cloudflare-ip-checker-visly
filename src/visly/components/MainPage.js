@@ -44,6 +44,36 @@ const styles = [
           useMask: true,
         },
       },
+      TWrpGJFfX7: {
+        none: {
+          text: "You can try Cloudflare IPv4 and IPv6 addresses like:",
+        },
+      },
+      "7jMX9m9fma": {
+        none: {
+          text: "103.21.244.0",
+        },
+      },
+      "37p14rTgb5": {
+        none: {
+          text: "2400:cb00:0000::0000",
+        },
+      },
+      "7tbHPDGCob": {
+        none: {
+          text: "You can also try ranges like:",
+        },
+      },
+      "2kPXKTbjUM": {
+        none: {
+          text: "108.162.192.0/18",
+        },
+      },
+      RyTM3AdUN2: {
+        none: {
+          text: "2405:8100::/32",
+        },
+      },
     },
   },
 ];
@@ -182,6 +212,84 @@ function MainPage(_props) {
                     </ValidationResultIconContext.Provider>
                   ),
                 ]}
+              </ContainerPrimitive>
+            }
+          </ContainerPrimitive>
+          <ContainerPrimitive
+            className={"__visly_reset __visly_scope_9twmSf6vJZ_D1pafZ1DAQ"}
+            key={"D1pafZ1DAQ"}
+            addSpacing={false}
+          >
+            {
+              <ContainerPrimitive
+                className={"__visly_reset __visly_scope_9twmSf6vJZ_AsNNnL12JS"}
+                key={"AsNNnL12JS"}
+                addSpacing={false}
+              >
+                <TextPrimitive
+                  className={
+                    "__visly_reset __visly_scope_9twmSf6vJZ_TWrpGJFfX7"
+                  }
+                  key={"TWrpGJFfX7"}
+                  text={getStyle("TWrpGJFfX7", "text")}
+                />
+                <ContainerPrimitive
+                  className={
+                    "__visly_reset __visly_scope_9twmSf6vJZ_XUxgy1mj9D"
+                  }
+                  key={"XUxgy1mj9D"}
+                  addSpacing={false}
+                >
+                  <TextPrimitive
+                    className={
+                      "__visly_reset __visly_scope_9twmSf6vJZ_7jMX9m9fma"
+                    }
+                    key={"7jMX9m9fma"}
+                    text={getStyle("7jMX9m9fma", "text")}
+                  />
+                  <TextPrimitive
+                    className={
+                      "__visly_reset __visly_scope_9twmSf6vJZ_37p14rTgb5"
+                    }
+                    key={"37p14rTgb5"}
+                    text={getStyle("37p14rTgb5", "text")}
+                  />
+                </ContainerPrimitive>
+                <SpacerPrimitive
+                  className={
+                    "__visly_reset __visly_scope_9twmSf6vJZ_CqDcxRPPqF"
+                  }
+                  key={"CqDcxRPPqF"}
+                />
+                <TextPrimitive
+                  className={
+                    "__visly_reset __visly_scope_9twmSf6vJZ_7tbHPDGCob"
+                  }
+                  key={"7tbHPDGCob"}
+                  text={getStyle("7tbHPDGCob", "text")}
+                />
+                <ContainerPrimitive
+                  className={
+                    "__visly_reset __visly_scope_9twmSf6vJZ_33L9DsTJR6"
+                  }
+                  key={"33L9DsTJR6"}
+                  addSpacing={false}
+                >
+                  <TextPrimitive
+                    className={
+                      "__visly_reset __visly_scope_9twmSf6vJZ_2kPXKTbjUM"
+                    }
+                    key={"2kPXKTbjUM"}
+                    text={getStyle("2kPXKTbjUM", "text")}
+                  />
+                  <TextPrimitive
+                    className={
+                      "__visly_reset __visly_scope_9twmSf6vJZ_RyTM3AdUN2"
+                    }
+                    key={"RyTM3AdUN2"}
+                    text={getStyle("RyTM3AdUN2", "text")}
+                  />
+                </ContainerPrimitive>
               </ContainerPrimitive>
             }
           </ContainerPrimitive>
