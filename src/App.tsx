@@ -14,7 +14,11 @@ function App() {
   return (
     <MainPage
       style={{minHeight: '100vh', width: '100%'}}
-      Input={<Input value={value} onChange={setValue} />}
+      Input={
+        <label style={{flexGrow: 1}}>
+          <Input value={value} onChange={setValue} />
+        </label>
+      }
       ValidationResultIcon={<ValidationResultIcon status={getStatus(value)} />}
     />
   );

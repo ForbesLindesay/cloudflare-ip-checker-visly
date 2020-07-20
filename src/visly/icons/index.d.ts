@@ -8,6 +8,7 @@ export const heartFill: string;
 export const message: string;
 export const repeat: string;
 export const share: string;
+export const streamlineIconServer1140X140: string;
 export const vislyCheck: string;
 export const vislyRadioBorder: string;
 export const vislyRadioCenter: string;

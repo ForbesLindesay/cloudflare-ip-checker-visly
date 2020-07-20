@@ -8,6 +8,7 @@ export const heartFill = require("../assets/fd204fbe-52a7-4ca8-becd-8a04ae285d64
 export const message = require("../assets/c960c1cc-f05b-4842-972b-c497154e2e5b@1x.svg");
 export const repeat = require("../assets/7900b30b-3148-4379-bb23-489f4b637df5@1x.svg");
 export const share = require("../assets/c0d36d31-1367-4c7a-91be-c1ac14e5c3c5@1x.svg");
+export const streamlineIconServer1140X140 = require("../assets/57b8c7c8-913a-452e-bd4d-e7702b618b0b@1x.png");
 export const vislyCheck = require("../assets/5cd79169-4d72-486a-bd71-20cfa0420bb2@1x.svg");
 export const vislyRadioBorder = require("../assets/d0171f72-9dbe-4e54-b469-a4432d2beca6@1x.svg");
 export const vislyRadioCenter = require("../assets/22ef53ca-3265-49f9-85f5-c00ff038c977@1x.svg");

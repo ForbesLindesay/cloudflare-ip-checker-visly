@@ -10,6 +10,7 @@ import {
   findSetVariantProps,
   makeCompositeDefaultProps,
 } from "./_internal_utils";
+import { SpacerPrimitive, IconPrimitive } from "./_internal_primitives";
 import { Root, InputPrimitive } from "./_internal_input";
 
 const styles = [
@@ -19,6 +20,13 @@ const styles = [
       input: {
         none: {
           placeholderText: "Placeholder",
+        },
+      },
+      "2x9zSCdnq6": {
+        none: {
+          role: "img",
+          src: require("../assets/57b8c7c8-913a-452e-bd4d-e7702b618b0b@1x.png"),
+          useMask: true,
         },
       },
     },
@@ -57,15 +65,27 @@ function Input(_props) {
       }}
     >
       {(getStyle) => (
-        <InputPrimitive
-          className={"__visly_reset __visly_scope_AzHv2NByua_input"}
-          key={"input"}
-          placeholder={
-            exists(props.placeholder)
-              ? props.placeholder
-              : getStyle("input", "placeholderText")
-          }
-        />
+        <>
+          <IconPrimitive
+            className={"__visly_reset __visly_scope_AzHv2NByua_2x9zSCdnq6"}
+            key={"2x9zSCdnq6"}
+            useMask={getStyle("2x9zSCdnq6", "useMask")}
+            src={getStyle("2x9zSCdnq6", "src")}
+          />
+          <SpacerPrimitive
+            className={"__visly_reset __visly_scope_AzHv2NByua_G1kYNxteiQ"}
+            key={"G1kYNxteiQ"}
+          />
+          <InputPrimitive
+            className={"__visly_reset __visly_scope_AzHv2NByua_input"}
+            key={"input"}
+            placeholder={
+              exists(props.placeholder)
+                ? props.placeholder
+                : getStyle("input", "placeholderText")
+            }
+          />
+        </>
       )}
     </Root>
   );
