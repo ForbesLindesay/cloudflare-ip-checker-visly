@@ -26,14 +26,7 @@ function App() {
       }
       ValidationResultIcon={<ValidationResultIcon status={getStatus(value)} />}
       StreamlineLinkText={
-        <a
-          style={{
-            padding: 0,
-            margin: 0,
-            textDecoration: 'none',
-          }}
-          href="https://www.streamlineicons.com/"
-        >
+        <a href="https://www.streamlineicons.com/">
           <StreamlineLinkText />
         </a>
       }

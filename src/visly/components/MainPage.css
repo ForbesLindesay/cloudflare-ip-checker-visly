@@ -191,7 +191,7 @@
   position: absolute;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: flex-start;
+  align-items: baseline;
   align-content: flex-start;
   justify-content: flex-start;
   top: auto;
@@ -213,19 +213,9 @@
   font-size: 14px;
   line-height: 20px;
   flex-shrink: 1;
-  transform: translateY(-4px);
 }
 .__visly_scope_9twmSf6vJZ_B3GMqQbie6 .__visly_scope_9twmSf6vJZ_3yLJ28pA4W {
   align-self: stretch;
   width: 4px;
   height: unset;
-}
-.__visly_scope_9twmSf6vJZ_B3GMqQbie6 .__visly_scope_9twmSf6vJZ_BEQJhttDpL {
-  overflow: hidden;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  align-content: flex-start;
-  justify-content: flex-start;
-  padding: 4px;
 }

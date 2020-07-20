@@ -137,21 +137,11 @@ function MainPage(_props) {
             addSpacing={false}
           >
             {[
-              <ContainerPrimitive
-                className={"__visly_reset __visly_scope_9twmSf6vJZ_BEQJhttDpL"}
-                key={"BEQJhttDpL"}
-                addSpacing={false}
-              >
-                {
-                  <TextPrimitive
-                    className={
-                      "__visly_reset __visly_scope_9twmSf6vJZ_PP2rFc5gvn"
-                    }
-                    key={"PP2rFc5gvn"}
-                    text={getStyle("PP2rFc5gvn", "text")}
-                  />
-                }
-              </ContainerPrimitive>,
+              <TextPrimitive
+                className={"__visly_reset __visly_scope_9twmSf6vJZ_PP2rFc5gvn"}
+                key={"PP2rFc5gvn"}
+                text={getStyle("PP2rFc5gvn", "text")}
+              />,
               <SpacerPrimitive
                 className={"__visly_reset __visly_scope_9twmSf6vJZ_3yLJ28pA4W"}
                 key={"3yLJ28pA4W"}
