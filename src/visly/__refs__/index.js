@@ -29,6 +29,7 @@ export const icon = {
   message: "c960c1cc-f05b-4842-972b-c497154e2e5b",
   repeat: "7900b30b-3148-4379-bb23-489f4b637df5",
   share: "c0d36d31-1367-4c7a-91be-c1ac14e5c3c5",
+  streamlineIconServer1140X140: "57b8c7c8-913a-452e-bd4d-e7702b618b0b",
   vislyCheck: "567b267e-ef5e-4078-b042-d5c96e513048",
   vislyRadioBorder: "d0171f72-9dbe-4e54-b469-a4432d2beca6",
   vislyRadioCenter: "22ef53ca-3265-49f9-85f5-c00ff038c977",
@@ -48,5 +49,6 @@ export const textstyle = {
 export const component = {
   Input: "50e2110b-155c-4778-a63c-44c9c1c8b4f1",
   MainPage: "4809cadd-f312-4121-aa60-7f9dbc8e5b31",
+  StreamlineLinkText: "2db1f5c4-3adc-4137-b620-de6a47537b58",
   ValidationResultIcon: "98f29061-122d-4b54-8744-94294e0c0d56",
 };

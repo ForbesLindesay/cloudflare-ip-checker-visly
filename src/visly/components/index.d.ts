@@ -102,10 +102,15 @@ export const MainPage: {
     props: {
       Input?: React.ReactNode;
       ValidationResultIcon?: React.ReactNode;
+      StreamlineLinkText?: React.ReactNode;
     } & CommonProps<HTMLDivElement>
   ): JSX.Element;
   Input: Input;
   ValidationResultIcon: ValidationResultIcon;
+  StreamlineLinkText: StreamlineLinkText;
+};
+export const StreamlineLinkText: {
+  (props: {} & CommonProps<HTMLDivElement>): JSX.Element;
 };
 export const ValidationResultIcon: {
   (

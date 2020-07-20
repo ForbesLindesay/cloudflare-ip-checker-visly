@@ -3,4 +3,5 @@
 /* eslint-disable */
 export const Input = require("./Input").default;
 export const MainPage = require("./MainPage").default;
+export const StreamlineLinkText = require("./StreamlineLinkText").default;
 export const ValidationResultIcon = require("./ValidationResultIcon").default;
