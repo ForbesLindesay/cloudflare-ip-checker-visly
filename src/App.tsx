@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
 import isCloudflare from '@authentication/cloudflare-ip';
-import {MainPage, Input, ValidationResultIcon} from './visly';
+import {
+  MainPage,
+  Input,
+  ValidationResultIcon,
+  StreamlineLinkText,
+} from './visly';
 
 function getStatus(value: string) {
   try {
@@ -20,6 +25,18 @@ function App() {
         </label>
       }
       ValidationResultIcon={<ValidationResultIcon status={getStatus(value)} />}
+      StreamlineLinkText={
+        <a
+          style={{
+            padding: 0,
+            margin: 0,
+            textDecoration: 'none',
+          }}
+          href="https://www.streamlineicons.com/"
+        >
+          <StreamlineLinkText />
+        </a>
+      }
     />
   );
 }

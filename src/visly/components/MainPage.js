@@ -20,6 +20,9 @@ import Input, { InputContext } from "./Input";
 import ValidationResultIcon, {
   ValidationResultIconContext,
 } from "./ValidationResultIcon";
+import StreamlineLinkText, {
+  StreamlineLinkTextContext,
+} from "./StreamlineLinkText";
 
 const styles = [
   {
@@ -74,6 +77,11 @@ const styles = [
           text: "2405:8100::/32",
         },
       },
+      PP2rFc5gvn: {
+        none: {
+          text: "Icon by ",
+        },
+      },
     },
   },
 ];
@@ -92,6 +100,7 @@ const defaultPropValues = [
           status: "valid",
         },
       },
+      "8VgbNRJb2e": {},
     },
   },
 ];
@@ -122,6 +131,52 @@ function MainPage(_props) {
     >
       {(getStyle) => (
         <>
+          <ContainerPrimitive
+            className={"__visly_reset __visly_scope_9twmSf6vJZ_GxvN5kmKeB"}
+            key={"GxvN5kmKeB"}
+            addSpacing={false}
+          >
+            {[
+              <ContainerPrimitive
+                className={"__visly_reset __visly_scope_9twmSf6vJZ_BEQJhttDpL"}
+                key={"BEQJhttDpL"}
+                addSpacing={false}
+              >
+                {
+                  <TextPrimitive
+                    className={
+                      "__visly_reset __visly_scope_9twmSf6vJZ_PP2rFc5gvn"
+                    }
+                    key={"PP2rFc5gvn"}
+                    text={getStyle("PP2rFc5gvn", "text")}
+                  />
+                }
+              </ContainerPrimitive>,
+              <SpacerPrimitive
+                className={"__visly_reset __visly_scope_9twmSf6vJZ_3yLJ28pA4W"}
+                key={"3yLJ28pA4W"}
+              />,
+              props.StreamlineLinkText === undefined ? (
+                <StreamlineLinkText
+                  key={"8VgbNRJb2e"}
+                  {...getCompositeDefaultProps("8VgbNRJb2e")}
+                  className="__visly_reset __visly_scope_9twmSf6vJZ_8VgbNRJb2e"
+                />
+              ) : (
+                <StreamlineLinkTextContext.Provider
+                  key="8VgbNRJb2e-provider"
+                  value={{
+                    key: "8VgbNRJb2e",
+                    className:
+                      "__visly_reset __visly_scope_9twmSf6vJZ_8VgbNRJb2e",
+                    ...getCompositeDefaultProps("8VgbNRJb2e"),
+                  }}
+                >
+                  {props.StreamlineLinkText}
+                </StreamlineLinkTextContext.Provider>
+              ),
+            ]}
+          </ContainerPrimitive>
           <ContainerPrimitive
             className={"__visly_reset __visly_scope_9twmSf6vJZ_4rY6GQvaMN"}
             key={"4rY6GQvaMN"}
@@ -301,6 +356,7 @@ function MainPage(_props) {
 
 MainPage.Input = Input;
 MainPage.ValidationResultIcon = ValidationResultIcon;
+MainPage.StreamlineLinkText = StreamlineLinkText;
 MainPage.__variants = [];
 
 export default MainPage;
