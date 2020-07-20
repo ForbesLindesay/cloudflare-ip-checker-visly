@@ -19,7 +19,7 @@ jobs:
 
       - name: Publish
         id: publish
-        run: printf "::set-output name=url::" && (npx netlify-cli deploy --dir=site | grep "https://.*\\.app" -o)
+        run: printf "::set-output name=url::" && (npx netlify-cli deploy --dir=build | grep "https://.*\\.app" -o)
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
