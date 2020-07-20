@@ -1,0 +1,35 @@
+name: Publish Preview
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+
+      - name: Publish
+        id: publish
+        run: printf "::set-output name=url::" && (npx netlify-cli deploy --dir=build | grep "https://.*\\.app" -o)
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+      - name: GitHub Status
+        uses: Sibz/github-status-action@v1
+        with:
+          authToken: ${{secrets.GITHUB_TOKEN}}
+          context: 'Netlify'
+          description: 'Preview Deployed'
+          state: 'success'
+          target_url: ${{steps.publish.outputs.url}}
+          sha: ${{github.event.pull_request.head.sha || github.sha}}
