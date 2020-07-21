@@ -23,6 +23,7 @@
   overflow: hidden;
   max-width: 700px;
   flex-grow: 1;
+  flex-shrink: 1;
   background-color: transparent;
   flex-direction: row;
   flex-wrap: nowrap;
